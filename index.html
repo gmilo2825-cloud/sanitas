@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Médica Sanitas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#ffffff;
+    color:#444;
+    scroll-behavior:smooth;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#58A6A6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#58A6A6;
+}
+
+section{
+    padding:120px 10% 90px;
+}
+
+.hero{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    min-height:100vh;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+
+    font-size:55px;
+    color:#3F6D73;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+
+    font-size:20px;
+    line-height:1.8;
+    color:#666;
+    margin-bottom:35px;
+}
+
+.boton{
+
+    display:inline-block;
+    background:#58A6A6;
+    color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.boton:hover{
+    background:#3F6D73;
+}
+
+.hero img{
+
+    width:520px;
+    max-width:100%;
+}
+
+.titulo{
+
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h2{
+
+    color:#3F6D73;
+    font-size:38px;
+}
+
+.titulo p{
+
+    color:#777;
+}
+
+.quienes{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.quienes img{
+
+    width:100%;
+    border-radius:20px;
+}
+
+.quienes p{
+
+    line-height:2;
+    font-size:18px;
+}
+
+.medicos{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+
+    background:#F8FCFC;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+}
+
+.card img{
+
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.card h3{
+
+    color:#3F6D73;
+    margin-bottom:10px;
+}
+
+.card span{
+
+    color:#58A6A6;
+    font-weight:600;
+}
+
+footer{
+
+    background:#58A6A6;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.quienes{
+
+    grid-template-columns:1fr;
+}
+
+nav{
+
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+
+    gap:15px;
+}
+
+.hero-text h1{
+
+    font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">SANITAS</div>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#quienes">Quiénes Somos</a></li>
+<li><a href="#medicos">Personal Médico</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="hero-text">
+
+<h1>Tu salud es nuestra prioridad.</h1>
+
+<p>
+En Clínica Médica Sanitas brindamos atención médica integral con un equipo de profesionales comprometidos con el bienestar de cada paciente, ofreciendo un servicio cálido, humano y de excelencia.
+</p>
+
+<a href="#quienes" class="boton">Conócenos</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=900" alt="Clínica">
+
+</section>
+
+<section id="quienes">
+
+<div class="titulo">
+
+<h2>Quiénes Somos</h2>
+
+<p>Compromiso, confianza y calidad médica.</p>
+
+</div>
+
+<div class="quienes">
+
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=900">
+
+<div>
+
+<p>
+
+Sanitas es una clínica médica orientada a brindar atención integral para toda la familia.
+
+Nuestro objetivo es combinar tecnología, profesionales altamente capacitados y una atención cercana para ofrecer diagnósticos precisos y tratamientos personalizados.
+
+Trabajamos diariamente para generar un ambiente de confianza, respeto y calidez, donde cada paciente se sienta acompañado durante todo su proceso de atención.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="medicos">
+
+<div class="titulo">
+
+<h2>Personal Médico</h2>
+
+<p>Profesionales comprometidos con tu bienestar.</p>
+
+</div>
+
+<div class="medicos">
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h3>Dra. Laura Gómez</h3>
+
+<span>Clínica Médica</span>
+
+<p>
+Especialista en medicina clínica con más de 15 años de experiencia en atención integral.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/men/41.jpg">
+
+<h3>Dr. Martín Pérez</h3>
+
+<span>Cardiología</span>
+
+<p>
+Especialista en prevención y tratamiento de enfermedades cardiovasculares.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<h3>Dra. Sofía Fernández</h3>
+
+<span>Pediatría</span>
+
+<p>
+Atención médica para niños y adolescentes con enfoque integral y familiar.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Clínica Médica Sanitas | Atención médica de excelencia.
+
+</footer>
+
+</body>
+</html>
